@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 import { AppProps } from "next/app"
 import { globalStyles } from "../styles/global"
 
@@ -14,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Container>
       <Header>
-        <Image src={logoImg} />
+        <Image src={logoImg} alt="Ignite shop logo" />
       </Header>
 
       <Component {...pageProps} />
