@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { GetStaticProps } from "next";
 import Image from "next/future/image";
 import Link from 'next/link'
@@ -34,6 +33,7 @@ export default function Home({ products }: HomeProps) {
         <Link 
           key={product.id} 
           href={`/product/${product.id}`} 
+          prefetch={false}
         >
           <Product className="keen-slider__slide">
           <Image src={product.imageUrl} width={520} height={480} alt="" />
